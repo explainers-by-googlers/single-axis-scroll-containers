@@ -1,12 +1,12 @@
 <pre class='metadata'>
-Title: The TODO API
-Shortname: todo
+Title: Single-Axis Scroll Containers
+Shortname: single-axis-scroll-containers
 Level: None
 Status: w3c/UD
-Repository: explainers-by-googlers/todo-your-repo-name
-URL: https://explainers-by-googlers.github.io/todo-your-repo-name
-Editor: TODO: Your Name, Google https://google.com, TODO@google.com
-Abstract: TODO: A short description of your spec, one or two sentences.
+Repository: explainers-by-googlers/single-axis-scroll-containers
+URL: https://explainers-by-googlers.github.io/single-axis-scroll-containers
+Editor: Free Debreuil, Google https://google.com, freedebreuil@google.com
+Abstract: Extend CSS overflow to support single-axis scroll containers, with implications for `position: sticky` and DOM scroll APIs.
 Markup Shorthands: markdown yes, css no
 Complain About: accidental-2119 yes, missing-example-ids yes
 Assume Explicit For: yes

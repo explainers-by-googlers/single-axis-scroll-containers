@@ -14,7 +14,7 @@ This, among other things, affects the behavior of an element with `position: sti
 
 It also affects DOM scroll APIs, such as `scrollIntoView()` and `scrollBy()`. An axis set to `overflow: clip` cannot move away from 0. This contrasts with the behavior of `overflow: hidden`, which is not user-interactable but can still be scrolled through script.
 
-> To minimize web compatibility impact, there is no behavior change when only one `overflow` axis is set (for example, `overflow-x: scroll`).
+_To minimize web compatibility impact, there is no behavior change when only one `overflow` axis is set (for example, `overflow-x: scroll`)._
 
 # Examples
 

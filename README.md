@@ -6,7 +6,7 @@ Scrolling on a single axis is a common pattern on the web. For example, a table 
 
 # Proposal
 
-This proposal extends the functionality of the `overflow` property to support usage of scrollable values with `clip` (for example, `overflow: scroll clip`).
+This proposal extends the functionality of the `overflow` property to support usage of [scrollable values](https://www.w3.org/TR/css-overflow-3/#scrollable:~:text=known%20as%20the-,scrollable%20values,-of%20overflow.%20The) with `clip` (for example, `overflow: scroll clip`).
 
 _Note: Even before this proposal, it is possible to specify these combinations, but the `clip` value is automatically converted to `hidden`._
 
@@ -16,7 +16,7 @@ It also affects DOM scroll APIs, such as `scrollIntoView()` and `scrollBy()`. An
 
 # Examples
 
-## Example 1: Table with labels on top and left
+## [Example 1: Table with labels on top and left](https://jsbin.com/meseqod)
 
 The developer creates a table with labels on the top (for example, the object) and on the left (for example, attributes of an object).
 
@@ -24,7 +24,7 @@ The user is on a mobile device and needs to scroll both vertically and horizonta
 
 With this proposal, the web developer can specify this behavior by setting `overflow: scroll clip` on the table.
 
-## Example 2: Call `scrollIntoView()` within a carousel that is visually clipped
+## [Example 2: Call `scrollIntoView()` within a carousel that is visually clipped](https://jsbin.com/ceyulam)
 
 The web developer has a carousel that is visually clipped on the vertical axis (for example, `overflow: scroll hidden`).
 
@@ -38,11 +38,11 @@ With this proposal, the web developer can ensure the visually clipped axis does 
 
 Many alternative solutions have been considered. They include:
 
-## Special casing how `position: sticky` works for the root scroller only
+## [Special casing how `position: sticky` works for the root scroller only](https://github.com/w3c/csswg-drafts/issues/8286)
 
 This only solves a subset of the cases we need. It does not generalize to pages that do not use the root scroller for primary scroll interaction, or to any form of nested scroller.
 
-## Directly specifying where a `position: sticky` element sticks with new CSS syntax
+## [Directly specifying where a `position: sticky` element sticks with new CSS syntax](https://github.com/w3c/csswg-drafts/issues/5528)
 
 This introduces additional cognitive load for web developers, who would need to learn and keep track of new syntax. It also introduces the risk of allowing invalid layouts (for example, two `position: sticky` elements anchored to each other in an infinite loop). This leads to additional complexity, because we would then need to specify what the invalid combinations are and what the behavior should be when they occur.
 

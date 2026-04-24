@@ -16,7 +16,7 @@ It also affects DOM scroll APIs, such as `scrollIntoView()` and `scrollBy()`. An
 
 # Examples
 
-## [Example 1: Table with labels on top and left](https://jsbin.com/meseqod)
+## Example 1: [Table with labels on top and left](https://jsbin.com/meseqod)
 
 The developer creates a table with labels on the top (for example, the object) and on the left (for example, attributes of an object).
 
@@ -24,7 +24,7 @@ The user is on a mobile device and needs to scroll both vertically and horizonta
 
 With this proposal, the web developer can specify this behavior by setting `overflow: scroll clip` on the table.
 
-## [Example 2: Call `scrollIntoView()` within a carousel that is visually clipped](https://jsbin.com/ceyulam)
+## Example 2: [Call `scrollIntoView()` within a carousel that is visually clipped](https://jsbin.com/ceyulam)
 
 The web developer has a carousel that is visually clipped on the vertical axis (for example, `overflow: scroll hidden`).
 

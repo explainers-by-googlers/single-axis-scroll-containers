@@ -65,7 +65,4 @@ There are no special a11y, i18n, privacy or security considerations.
 
 # Web Compatibility
 
-To minimize web compatibility impact, there is no behavior change when only one `overflow` axis is set (for example, `overflow-x: scroll`).
-
-The only behavior change is `clip` combined with a scrollable value (for example, `overflow: scroll clip`), which is
-[no longer converted to `hidden`](https://github.com/w3c/csswg-drafts/issues/12289). Usage is tracked by the [`SingleAxisScroller`](https://chromestatus.com/metrics/feature/timeline/popularity/5862) use counter.
+overflow: scroll clip used to be converted into overflow: scroll hidden, but this will no longer happen, so there is a small compatibility risk. Usage metrics: [`SingleAxisScroller`](https://chromestatus.com/metrics/feature/timeline/popularity/5862)

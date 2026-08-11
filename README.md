@@ -65,7 +65,7 @@ There are no special a11y, i18n, privacy or security considerations.
 
 # Web Compatibility
 
-overflow: scroll clip used to be converted into overflow: scroll hidden, but this will no longer happen, so there is a small compatibility risk.
+overflow: scroll clip used to be converted into overflow: scroll hidden, but this will no longer happen, so there is a compatibility risk.
 
 Analysis: [Web Compat: Single-axis scroll containers](https://docs.google.com/document/d/1_4zPKOQ8S-Ttn-4BTFaIR7YWkkQYNiF_QlTsOK-k7uE/edit?usp=sharing)
 

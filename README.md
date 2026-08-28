@@ -54,8 +54,6 @@ It is possible to emulate single-axis behavior using `scroll` events and script 
 
 Define implications of making scroll containers single-axis for:
 
-- Scroll snap
-- Scroll-driven animations
 - Block fragmentation when printing
 - `background-attachment`
 
